@@ -5,15 +5,15 @@
 Feature: to verify login functionalities
 	@smoketest
   Scenario: Verity user is able to login with valid credentials
-    Given user in on login page
+    Given user in on the login page
     When user enters username and password
-    And clicks on login button
+    And clicks on the login button
     Then user logged in and navigated to home page
 
   Scenario Outline: Verity user is able to login with valid credentials
-    Given user in on login page
+    Given user in on the login page
     When user enters <username> and <password>
-    And clicks on login button
+    And clicks on the login button
     Then user logged in and navigated to home page
 
     Examples: 

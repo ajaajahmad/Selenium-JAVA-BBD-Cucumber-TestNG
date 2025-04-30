@@ -4,8 +4,8 @@ import io.cucumber.java.en.*;
 
 public class Login {
 
-	@Given("user in on login page")
-	public void user_in_on_login_page() {
+	@Given("user in on the_login page")
+	public void user_in_on_the_login_page() {
 		System.out.println("Inside Step: user is on login page");
 	}
 
@@ -14,8 +14,8 @@ public class Login {
 		System.out.println("Inside Step: user enters username and password");
 	}
 
-	@And("clicks on login button")
-	public void clicks_on_login_button() {
+	@And("clicks on the_login button")
+	public void clicks_on_the_login_button() {
 		System.out.println("Inside Step: clicks on login button");
 	}
 
