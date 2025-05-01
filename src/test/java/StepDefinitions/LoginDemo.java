@@ -29,11 +29,12 @@ public class LoginDemo {
 
 	}
 
-	@When("user enters valid username and password")
-	public void user_enters_valid_username_and_password() {
+	@When("^user enters (.*) and (.*)$")
+	public void user_enters_valid_username_and_password(String username, String password) {
 		System.out.println("Step-3: User enters valid username and password");
-		driver.findElement(By.name("username")).sendKeys("student");
-		driver.findElement(By.name("password")).sendKeys("Password123");
+		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);
+
 	}
 
 	@And("clicks on login button")
