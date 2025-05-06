@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginPage_PF {
+public class LoginPage_PF {
 
 	@FindBy(name = "username")
 	WebElement txt_username;
@@ -16,20 +16,24 @@ public class loginPage_PF {
 	@FindBy(id = "submit")
 	WebElement btn_login;
 
-	@FindBy(className = "post-title")
-	WebElement post_title;
-
 	WebDriver driver;
 
-	public loginPage_PF(WebDriver driver) {
+	public LoginPage_PF(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver,loginPage_PF.class);
+		PageFactory.initElements(driver,this);
 	}
 
-	public void loginWithValidCred(String username,String password) {
-		txt_username.sendKeys();
-		txt_password.sendKeys();
-		btn_login.click();
-		post_title.isDisplayed();
+	public void enterUsername(String username) {
+		txt_username.sendKeys(username);
 	}
+
+	public void enterPassword(String password) {
+		txt_password.sendKeys(password);
+	}
+
+	public void clickOnLogin() {
+		btn_login.click();
+
+	}
+
 }

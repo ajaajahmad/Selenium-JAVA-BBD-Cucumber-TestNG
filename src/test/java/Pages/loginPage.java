@@ -1,16 +1,16 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class loginPage {
+public class LoginPage {
 	protected WebDriver driver;
 	private By txt_username = By.name("username");
 	private By txt_password = By.name("password");
 	private By btn_login = By.id("submit");
 	private By txt_post_title = By.className("post-title");
 
-	public loginPage(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
