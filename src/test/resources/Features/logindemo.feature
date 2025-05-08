@@ -9,4 +9,4 @@ Feature: To verify login functionalities
 
     Examples: 
       | username | password |
-      | student | Password123 |
+      | yourusername | yourpassword |

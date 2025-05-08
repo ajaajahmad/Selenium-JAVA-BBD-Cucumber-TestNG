@@ -27,7 +27,7 @@ public class LoginDemo_PF {
 	@And("user is on login page")
 	public void user_is_on_login_page() {
 		System.out.println("Step-2: User is on login page");
-		driver.navigate().to("https://practicetestautomation.com/practice-test-login/");
+		driver.navigate().to("URL");
 
 	}
 

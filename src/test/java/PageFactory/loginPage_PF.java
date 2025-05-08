@@ -25,7 +25,7 @@ public class LoginPage_PF {
 	WebElement btn_login;
 
 	// We can get link texts as well in
-	@FindBy(partialLinkText = "ajaaj")
+	@FindBy(partialLinkText = "testlink")
 	List<WebElement> myLinks;
 
 	// Another way of getting elements
